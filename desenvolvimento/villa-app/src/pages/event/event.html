@@ -1,0 +1,76 @@
+<ion-header>
+
+  <ion-navbar [ngClass]="'event-header'">
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid *ngIf="isLoad">
+    <ion-row>
+
+      <ion-col col-9 ngClass="title-box">
+        <div class="event-title">
+          <h2>{{ event.title }}</h2>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 ngClass="date-box">
+        <div class="event-date">
+          <p>{{ event.date | date: 'dd/MM' }}</p>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col col-12>
+        <img class="event-flyer" imageViewer [src]="event.flyer">
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+
+        <ion-list>
+          <a ion-item (click)="openFacebookEvent()">
+            <ion-icon name="logo-facebook" item-start>
+
+            </ion-icon>
+            <i item-left class="fa fa-location-arrow"></i>
+            <ion-label>
+              <h2>Evento no Facebook</h2>
+            </ion-label>
+          </a>
+
+          <a ion-item (click)="info()">
+            <ion-icon name="ios-information-circle" item-start>
+
+            </ion-icon>
+            <i item-left class="fa fa-location-arrow"></i>
+            <ion-label>
+              <h2>Informações</h2>
+            </ion-label>
+          </a>
+
+          <a ion-item (click)="openShareMenu()">
+            <ion-icon name="md-share" item-start>
+
+            </ion-icon>
+            <i item-left class="fa fa-location-arrow"></i>
+            <ion-label>
+              <h2>Compartilhar</h2>
+            </ion-label>
+          </a>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

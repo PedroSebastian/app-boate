@@ -1,0 +1,38 @@
+<ion-header>
+
+  <navbar></navbar>
+
+  <ion-toolbar class="subheader">
+    <ion-title>Próximos Eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="page-events">
+
+  <loading [isBusy]="isLoading"></loading>
+
+  <!--<ion-card *ngFor="let event of events | async">-->
+    <!--<img class="flyer" [src]="event.flyer"/>-->
+    <!--<div class="card-title">São Paulo</div>-->
+    <!--<div class="card-subtitle">41 Listings..</div>-->
+  <!--</ion-card>-->
+
+  <div [hidden]="!isLoad" class="event-container" padding>
+    <ion-grid *ngFor="let event of events">
+      <ion-row (click)="eventPage(event)">
+        <ion-col col-3 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date">{{ event.date | date: 'dd/MM' }}</p>
+              <p class="event-day">{{ event.date | date: 'EEE' | uppercase }}</p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">{{ event.title }}</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

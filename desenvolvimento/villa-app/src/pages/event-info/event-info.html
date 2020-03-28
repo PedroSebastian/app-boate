@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title ngClass="event-title" *ngIf="eventInfo != undefined">
+
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="closeModal()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="subheader">
+    <ion-title>Informações do Evento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 *ngIf="eventInfo != undefined">
+        <div ngClass="event-description" [innerHTML]="eventInfo.description"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

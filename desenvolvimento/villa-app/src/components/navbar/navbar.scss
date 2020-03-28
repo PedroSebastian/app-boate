@@ -1,0 +1,16 @@
+navbar {
+  .title-image {
+    margin-top: 5px;
+    height: 22px;
+  }
+
+  .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border-width: 0 0 4px;
+  }
+
+
+  .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+    border-style: solid !important;
+    border-color: #e8e8e8 !important;
+  }
+}

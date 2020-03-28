@@ -1,0 +1,29 @@
+<ion-header>
+
+  <navbar></navbar>
+
+</ion-header>
+
+
+<ion-content #container>
+
+  <loading [isBusy]="isLoading"></loading>
+  <ion-fab bottom right>
+    <button [disabled]="isLoadingRadio" ion-fab color="secondary" (click)="play()" [disabled]="playerStatus == 1">
+      <ion-icon [hidden]="playerStatus == 1 || playerStatus == 2"
+                class="my-play" name="play"></ion-icon>
+      <ion-spinner [hidden]="playerStatus == 0 || playerStatus == 2 || playerStatus == 3" name="crescent"></ion-spinner>
+      <ion-icon [hidden]="playerStatus == 0 || playerStatus == 1 || playerStatus == 3" name="pause"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-slides [pager]="imagesLength > 1 && isLoad">
+
+    <ion-slide [hidden]="!isLoad" *ngFor="let image of banners | async">
+      <img [src]="image.thumb">
+      <div class="fanart" [lazyLoad]="image.src" [scrollObservable]="container.ionScroll"></div>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

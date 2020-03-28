@@ -1,0 +1,104 @@
+<ion-header>
+
+  <navbar></navbar>
+
+  <ion-toolbar class="subheader">
+    <ion-title>Mais Informações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="items-container" padding>
+    <ion-grid>
+      <ion-row (click)="openAbout()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="information-circle" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">QUEM SOMOS</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row (click)="openOnlineSales()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="pricetags" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">COMPRAS ONLINE</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row (click)="openChat()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="chatboxes" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">FALE CONOSCO</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row (click)="openMap()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="ios-pin" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">ENCONTRE-NOS</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row (click)="openSocial()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="heart" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">SOCIAL</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!--<ion-grid>-->
+      <!--<ion-row (click)="logOut()">-->
+        <!--<ion-col col-2 class="date-col">-->
+          <!--<div class="event-hour">-->
+            <!--<span>-->
+              <!--<p class="event-date"><ion-icon name="md-log-out" item-start></ion-icon></p>-->
+            <!--</span>-->
+          <!--</div>-->
+        <!--</ion-col>-->
+        <!--<ion-col class="name-col">-->
+          <!--<div class="event-title"><span class="event-title-text">Sair</span></div>-->
+        <!--</ion-col>-->
+      <!--</ion-row>-->
+    <!--</ion-grid>-->
+  </div>
+
+</ion-content>

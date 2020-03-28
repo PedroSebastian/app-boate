@@ -1,0 +1,73 @@
+page-event {
+  //.event-header {
+  //  padding: 10px;
+  //  min-height: 44px;
+  //}
+  //
+  //.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  //  border-width: 0 0 0.55px;
+  //}
+
+  .title-box, .date-box {
+    display: table;
+  }
+
+  .event-title, .event-date {
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+  }
+
+  .event-date {
+    background-color: #f2f2f2;
+    border: 3px solid #313131;
+  }
+
+  .event-title {
+    background-color: #f2f2f2;
+  }
+
+  .event-title h2 {
+    font-family: 'Oswald ExtraLight Italic';
+    text-transform: uppercase;
+    color: #090909;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0;
+    line-height: 1.4em;
+  }
+
+  .event-date p {
+    font-family: 'Oswald Regular';
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .event-flyer {
+    margin-top: 0px;
+  }
+
+  .item-ios {
+    margin-bottom: 8px;
+    background-color: #f2f2f2;
+    font-family: 'Oswald Light';
+    text-transform: uppercase;
+  }
+
+  .label-ios {
+    margin: 15px 8px 15px 5px;
+  }
+
+  .list-ios > .item-block:first-child {
+    border-top: none;
+  }
+
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: none;
+  }
+
+  .list-ios .item-block .item-inner {
+    border-bottom: none;
+  }
+}

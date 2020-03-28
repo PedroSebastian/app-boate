@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="closeModal()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="subheader">
+    <ion-title>Social</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="items-container" padding>
+
+    <ion-grid>
+      <ion-row (click)="openInstagram()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="logo-instagram" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">Instagram</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row (click)="openFacebookPage()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="logo-facebook" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">Facebook</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row (click)="openWebsite()">
+        <ion-col col-2 class="date-col">
+          <div class="event-hour">
+            <span>
+              <p class="event-date"><ion-icon name="md-globe" item-start></ion-icon></p>
+            </span>
+          </div>
+        </ion-col>
+        <ion-col class="name-col">
+          <div class="event-title"><span class="event-title-text">Nosso site</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>

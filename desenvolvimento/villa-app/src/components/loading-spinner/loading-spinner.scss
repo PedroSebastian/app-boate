@@ -1,0 +1,10 @@
+loading-spinner {
+  transition: z-index 0.2s step-end;
+
+  .spinner {
+    margin: 60px auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+}

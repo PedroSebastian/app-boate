@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+
+  </ion-navbar>
+  <ion-toolbar *ngIf="isLoad" class="subheader">
+    <ion-title>{{ album.album_name }}</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <loading [isBusy]="isLoading"></loading>
+
+  <div [hidden]="!isLoad" style="background-color: #181818;">
+    <div class="gallery-holder" style="margin-top: 44px;">
+      <a *ngFor="let photo of photos; let i = index" [attr.data-index]="i" class="mobx" [attr.href]="photo"
+         [attr.data-rel]="album.album_name">
+        <img *ngIf="i == 0" [src]="photo">
+        <img *ngIf="i != 0" [src]="album.thumbs[i]">
+      </a>
+    </div>
+  </div>
+
+</ion-content>

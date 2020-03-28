@@ -1,0 +1,48 @@
+page-event-info {
+  .subheader .toolbar-background-ios {
+    border-width: 0 0 1px !important;
+    background-color: #7e3501;
+  }
+
+  .subheader .toolbar-title-ios {
+    color: #ffffff;
+    font-family: "Oswald ExtraLight Italic";
+    letter-spacing: 1px;
+  }
+
+  .subheader .toolbar-background-ios {
+    border-style: solid !important;
+    border-color: #e8e8e8 !important;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-family: 'Oswald Bold';
+  }
+
+  h1, h2 {
+    line-height: 30px;
+    color: #333333;
+    text-align: center;
+    font-family: 'OpenSans Bold';
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h1, h2 {
+    margin-bottom: 25px;
+  }
+
+  .event-description {
+    font-family: 'OpenSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 10px;
+  }
+}

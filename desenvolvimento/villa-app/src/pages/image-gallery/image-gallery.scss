@@ -1,0 +1,98 @@
+page-image-gallery {
+  .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border-width: 0 0 4px;
+  }
+
+  .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+    border-style: solid !important;
+    border-color: #e8e8e8 !important;
+  }
+
+  .subheader .toolbar-background-ios {
+    border-width: 0 0 1px !important;
+    background-color: #7e3501;
+  }
+
+  .subheader .toolbar-title-ios {
+    color: #ffffff;
+    font-family: "Oswald ExtraLight Italic";
+    letter-spacing: 1px;
+  }
+
+  .subheader .toolbar-background-ios {
+    border-style: solid !important;
+    border-color: #e8e8e8 !important;
+  }
+
+  .album-background {
+    background-color: #171717;
+    background: url("../../assets/images/bg.jpg");
+  }
+
+  .album-padding {
+    //padding: 10px !important;
+  }
+
+  .album {
+    min-height: 275px;
+    background-color: #0F0F0F;
+    padding: 7.7px;
+    margin-bottom: 10px;
+  }
+
+  .album-img-container {
+    height: 210px;
+    width: 100%;
+    background-color: #1b1b1b;
+  }
+
+  .album .album-img-container img {
+    max-height: 210px;
+    width: 100%;
+    object-fit: cover;
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+  }
+
+  .album h2 {
+    font-family: 'Oswald Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFCC00;
+    padding: 0px;
+    margin: 0px;
+    line-height: 20px;
+    min-height: 20px;
+    margin-top: 8px;
+  }
+
+  .album h3 {
+    line-height: 22px;
+    min-height: 22px;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Oswald Regular', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999999;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .album h3 span {
+    font-family: 'Oswald Regular', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFF;
+    padding: 0px;
+    margin: 0px;
+    line-height: 20px;
+    min-height: 20px;
+  }
+
+  .album-click:active {
+    opacity: 0.8;
+  }
+
+}

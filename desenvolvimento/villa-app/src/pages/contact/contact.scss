@@ -1,0 +1,26 @@
+page-contact {
+  //.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  //  border-width: 0 0 4px;
+  //}
+  //
+  //.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+  //  border-style: solid !important;
+  //  border-color: #e8e8e8 !important;
+  //}
+
+  .subheader .toolbar-background-ios {
+    border-width: 0 0 1px !important;
+    background-color: #7e3501;
+  }
+
+  .subheader .toolbar-title-ios {
+    color: #ffffff;
+    font-family: "Oswald ExtraLight Italic";
+    letter-spacing: 1px;
+  }
+
+  .subheader .toolbar-background-ios {
+    border-style: solid !important;
+    border-color: #e8e8e8 !important;
+  }
+}

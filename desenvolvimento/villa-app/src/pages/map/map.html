@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="closeModal()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="subheader">
+    <ion-title>Encontre-nos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <div class="map">
+      <img imageViewer src="{{ info.mapa }}" alt="Mapa Localização Villa Club">
+    </div>
+    <ion-item>
+      <h2 text-wrap>{{ info.nome }}</h2>
+      <p>{{ info.endereco }}</p>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,69 @@
+page-home {
+  .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border-width: 0 0 4px;
+  }
+
+  .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+    border-style: solid !important;
+    border-color: #e8e8e8 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #f0f0f0;
+    opacity: 0.9;
+  }
+
+  .swiper-slide img {
+    height: calc(100vh - 44px - 44px);
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+
+  .fanart {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 44px - 44px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: opacity 1s;
+    opacity: 0;
+  }
+
+  .ng-lazyloaded {
+    opacity: 1;
+  }
+
+  ion-fab[right] {
+    right: 20px;
+  }
+
+  .background-planting{background-image: url('assets/images/VillaWallpapper1.jpg');}
+  .background-fence{background-image: url('assets/images/VillaWallpapper2.jpg');}
+
+  ion-fab[right] {
+    right: 17px;
+  }
+
+  ion-fab[bottom] {
+    bottom: 17px;
+  }
+
+  .my-play {
+    margin-left: 3px;
+  }
+
+  .spinner-ios-crescent circle {
+    stroke: #fff;
+  }
+
+  button[disabled] {
+    cursor: default;
+    background-color: #7e4010;
+    opacity: .95;
+    pointer-events: none;
+  }
+}

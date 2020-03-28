@@ -1,0 +1,107 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+  font-family: 'Oswald ExtraLight';
+  font-style: normal;
+  src: url('../assets/fonts/oswald/Oswald-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald ExtraLight Italic';
+  font-style: normal;
+  src: url('../assets/fonts/oswald/Oswald-Extra-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald Light';
+  font-style: normal;
+  src: url('../assets/fonts/oswald/Oswald-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald Regular';
+  font-style: normal;
+  src: url('../assets/fonts/oswald/Oswald-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald Medium';
+  font-style: normal;
+  src: url('../assets/fonts/oswald/Oswald-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald SemiBold';
+  font-style: normal;
+  src: url('../assets/fonts/oswald/Oswald-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald Bold';
+  font-style: normal;
+  src: url('../assets/fonts/oswald/Oswald-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Regular';
+  font-style: normal;
+  src: url('../assets/fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  font-style: normal;
+  src: url('../assets/fonts/open-sans/OpenSans-Bold.ttf');
+}
+
+.toolbar-ios-secondary .toolbar-background-ios {
+  border-width: 0 0 0.55px !important;
+}
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+  margin-left: 8px;
+}
+
+.action-sheet-cancel {
+  color: #d53828 !important;
+}
+
+.action-sheet-ios .action-sheet-button {
+  color: #7e4010;
+}
+
+.action-sheet-ios .action-sheet-button ion-icon {
+  color: #7e3501;
+}

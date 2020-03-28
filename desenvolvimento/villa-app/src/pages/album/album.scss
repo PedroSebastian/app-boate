@@ -1,0 +1,44 @@
+page-album {
+  .subheader .toolbar-background-ios {
+    border-width: 0 0 1px !important;
+    background-color: #7e3501;
+  }
+
+  .subheader .toolbar-title-ios {
+    color: #ffffff;
+    font-family: "Oswald ExtraLight Italic";
+    letter-spacing: 1px;
+  }
+
+  .subheader .toolbar-background-ios {
+    border-style: solid !important;
+    border-color: #e8e8e8 !important;
+  }
+
+  .gallery-holder {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .mobx:nth-child(1), .mobx:nth-child(1) img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .mobx {
+    width: 50% !important;
+    height: 150px;
+    margin: 0;
+    padding: 1px;
+    margin-bottom: 1px;
+  }
+
+  .mobx img {
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover;
+    margin: 0;
+  }
+}

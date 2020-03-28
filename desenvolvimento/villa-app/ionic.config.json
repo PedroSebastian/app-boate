@@ -1,0 +1,7 @@
+{
+  "name": "VillaApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
